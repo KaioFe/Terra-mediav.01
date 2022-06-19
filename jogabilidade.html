@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="jogabilidade.css">
+    <title>Jogabilidade e Personagens</title>
+</head>
+<body>
+    <h1>Personagens e o Cenario</h1>
+    <div class="a">
+    <a href="batalhaterramedia.html">Inicio</a>
+    <a href="jogabilidade.html">Jogabilidade e Personagens</a>
+    <a href="criarpersonagens.html">Criar Personagens</a>
+    <a href="sobresite.html">Sobre Autor</a>
+    </div>
+    
+    <h2>Jogabilidade</h2>
+    <p> O jogo de batalha entre personagens baseados na Terra-Média que é o mundo do Senhor dos Anéis.
+         A batalha ocorrepor turnos de forma automáticano formato de todos contra todos,
+         considerando as características dos personagens. Cadapersonagem é de uma naçãoe possui 5 habilidades,
+         conforme descrito a seguir.</p>
+    <p>As habilidadesque  os  personagens  possuem são força,  velocidade,  precisão, armadurae recuperação.
+         Além da nacionalidade e das 5 habilidades,
+         o personagem possui seus pontos de energia e um nome para identificá-lo ao
+         longo de suas interações no jogo. No  início  do  jogo,
+         o  personagem  possui  100  pontosde  energia  e  outros  100
+         pontos  de habilidadesque  devem  ser  distribuídos entre as  habilidades da
+        forma  que  o  jogador preferir.</p>
+    <p id="for">•Força: a capacidade que o personagem possui de infringir danos no adversário no combate a curta distância;</p>
+    <p id="pre">•Precisão: a precisão denota a capacidade na qual o personagem tem para infringir danos no adversário à longa distância;</p>
+    <p id="velo">•Velocidade: o tempo no qualo personagem leva para se aproximar do adversário;</p>
+    <p id="ar">•Armadura: o quanto reduz o impacto dos ataques do adversário,
+     independente da distância na qual os ataques são realizados;</p>
+    <p id="re">•Recuperação: a capacidade de recuperar pontos para a próxima batalha.</p>
+
+    <p>Neste  jogo,  foram  selecionadas as  seguintes nações da 
+        Terra-Média:Orc  Snaga,Uruk-hai, Cavaleirode  Rohan, Guerreiro  de  Gondor,
+        Hobbit, Elfo da Floresta,  Elfo  de Lothlórien e anão.
+        A casa de cada nação é, respectivamente, Cirith Ungol, Portão Negro,
+        Abismo  de  Helm, Minas  Tirith, OCondado, Floresta  das  Trevas  ou  Mirkwood,
+        Caras Galadhon ou Cidade das Árvorese Colinas de Ferro.
+        A Tabela 1descrevea ligação entre cada nação e a sua casa.</p>
+
+    <table border="1" id="tabela">
+    <tr>
+        <th>Nação</th>
+        <th>Casa</th>
+    </tr>    
+     <tr>
+        <td>Orc Snaga</td>
+        <td>Arith Ungol</td>
+    </tr>
+    <tr>
+        <td>Uruk-Hai</td>
+        <td>Potão Negro</td>
+    </tr>
+    <tr>
+        <td>Cavaleiro de Rohan</td>
+        <td>Abismo de Helm</td>
+     </tr>
+     <tr>
+        <td>Guerreiro de Gondor</td>
+        <td>Minas Tirith</td>
+     </tr>
+     <tr>
+        <td>Hobbit</td>
+        <td>O Condado</td>
+     </tr>
+     <tr>
+        <td>Elfo da Floresta</td>
+        <td>Floresta das Trevas</td>
+     </tr>
+     <tr>
+        <td>Elfo de Lothlórien</td>
+        <td>Caras Galadhon</td>
+     </tr>
+     <tr>
+        <td>Anão</td>
+        <td>Colinas de Ferro</td>
+     </tr>
+    </table>
+    <h2>A Batalha</h2>
+    <p>A  batalha  é  realizada  em  um  cenário  fixo  no  qual  podem  ser  alocados  até oito jogadores,
+        sendo que só pode haver um personagem de cada nação.
+        O cenário é fixo porque a batalha inteira ocorre neste único cenário escolhido.
+        Dentre os cenários possíveis,
+        o jogo pode definir qualquer uma das oito casas das nações.</p>
+    <p>Não  existem  alianças  e  “amizades”  entre  os  personagens,  portanto  eles  se enfrentam em
+        duelos de um contra o outro em cada rodadae o vencedor avança para a próxima rodada.
+        No início da rodada, ospersonagens são distribuídos aleatoriamente em pares  para  realizarem a batalha,
+        caso a  quantidade  de  personagens  na  batalha  seja ímpar,
+        um deles ficará fora da batalha e se classificará automaticamente para a rodada seguinte.
+        Os vencedores de uma rodada são novamente distribuídos aleatoriamente para se
+        enfrentarem  em  uma  nova  batalha.  As  rodadas  são  repetidas  de  acordo
+        com  a quantidade  restante  de  personagens  na  arena,  até  que  ocorra  a  batalha
+        finale  seja definido um personagem como o vencedor.
+        O jogador que “sobrou” na rodada anterior não pode sobrar novamente na rodada seguinte.</p>
+    <h2>O Duelo</h2>
+    <p>A batalha é realizada em turnos de duelosdiretos entre dois personagens, 
+        conforme foi descrito anteriormente.
+        Porém, é preciso descrever com mais detalhes como se deve determinar o vencedor de cada duelo.</p>
+    <p>Antes,  deve-se  observar  que um duelo possui  como  informações de  entrada:
+    o cenário da batalha e os dois personagens do confronto com as suas características. Após o confronto,
+     a  informação de  saída  é o  vencedordo confronto com  os  danos que  sofreue infringiu.</p>
+    <p>O confronto ocorre em turnosno qual cada personagem faz uma jogada que pode serataque,
+     defesaou movimentação em direção ao adversário.</p>
+    <p>O ataque é o golpe desferido pelo personagem no adversário.
+    O golpe possui uma probabilidade de atingir o adversárioe essa probabilidade é 
+    calculada de acordo com a sua habilidade naquele tipo de ataque. O ataque pode ser do tipo:</p>
+    <p id="dec">•Defesa  curta é aquela  que  visa  proteger  o  personagem  do  ataque curto desferido pelo adversário;</p>
+    <p id="del">•Defesa  longa  é  aquela  que  visa  proteger  o  personagem  do  ataque  longo desferido pelo adversário.</p>
+    <p>Considera-se que foi realizada a defesa se a ação do personagem de defesa e se o  adversário
+    deferiu  algum  golpe  contra  ele.
+    Caso  ocorra  a  defesa,  a  redução  do  dano causado deve consideraro tipo de ataque recebido,
+    habilidade do adversário no tipo de ataque  desferido,
+    a  capacidade  do  personagem  em realizar a  defesa  e  bônus  ou penalidades
+    causadas pelo cenário da batalha.</p>
+    <p>Movimentação: é o avanço do personagem na arena do confronto.
+    Esse avanço se dá um passo por vez até que não existam mais passos entre o personagem e o adversário.</p>   
+</body>
+<hr>
+<footer>
+    <p>Curso de TI Estacio de Brasilia em 2022.1 (TIEB 2022.1)</p>
+    <p>Todo direitos reservados.</p>
+    <p>( Terra-Média, locais e personagens são direitos de
+    <a href="htpps://www.middleearth.com/home.html">Tolkien Enterprises</a>)</p>
+    </footer>
+</html>

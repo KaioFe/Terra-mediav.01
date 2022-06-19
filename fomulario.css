@@ -1,0 +1,60 @@
+div#nacao{
+    width: 200px;
+    height:150px;
+    top: 90px;
+}
+div#hab{
+    width: 200px;
+    height:150px;
+    position: relative;
+    left: 225px;
+    top: -130px;   
+}
+button.botao{
+    position: relative;
+    left: 238px;
+    top: -120px;
+}
+fieldset .form{
+    border: 34px #111111 solid;
+    border-radius: 10px;
+}
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 450px;
+    /* Para ver as bordas do formulário */
+    padding: 7em;
+    position: relative;
+    top: -100px;
+}
+#titulodois{
+    margin: 2%;
+    text-align: center;
+    
+}
+select{
+    text-align: center;
+
+}
+footer p{
+    text-align: center;
+}
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+    font-size: 1em;
+    
+}
+body{
+    font: normal 16px Arial,
+    Verdana, serif;
+} 
+.a {
+    text-align: right;
+ }
+ h1{
+    text-align: center;
+}
